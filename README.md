@@ -1,26 +1,54 @@
-# DevSecOps-Project
-DevSecOps Kubernetes Three-Tier Project using AWS EKS, ArgoCD, Prometheus, Grafana, and Jenkins
+# Three-Tier Web Application Deployment on AWS EKS using AWS EKS, ArgoCD, Prometheus, Grafana, and Jenkins
 
-The aim of this project is to deploy, secure, and monitor a scalable application environment.
+![Three-Tier Banner](assets/Three-Tier.gif)
 
+Welcome to the Three-Tier Web Application Deployment project! 🚀
 
-The steps
-1. IAM User Setup: Create an IAM user on AWS with the necessary permissions to facilitate deployment and management activities.
-2. Infrastructure as Code (IaC): Use Terraform and AWS CLI to set up the Jenkins server (EC2 instance) on AWS.
-3. Jenkins Server Configuration: Install and configure essential tools on the Jenkins server, including Jenkins itself, Docker, Sonarqube, Terraform, Kubectl, AWS CLI, and Trivy.
-4. EKS Cluster Deployment: Utilize eksctl commands to create an Amazon EKS cluster, a managed Kubernetes service on AWS.
-5. Load Balancer Configuration: Configure AWS Application Load Balancer (ALB) for the EKS cluster.
-6. Amazon ECR Repositories: Create private repositories for both frontend and backend Docker images on Amazon Elastic Container Registry (ECR).
-7. ArgoCD Installation: Install and set up ArgoCD for continuous delivery and GitOps.
-8. Sonarqube Integration: Integrate Sonarqube for code quality analysis in the DevSecOps pipeline.
-9. Jenkins Pipelines: Create Jenkins pipelines for deploying backend and frontend code to the EKS cluster.
-10. Monitoring Setup: Implement monitoring for the EKS cluster using Helm, Prometheus, and Grafana.
-11. ArgoCD Application Deployment: Use ArgoCD to deploy the Three-Tier application, including database, backend, frontend, and ingress components.
-12. DNS Configuration: Configure DNS settings to make the application accessible via custom subdomains.
-13. Data Persistence: Implement persistent volume and persistent volume claims for database pods to ensure data persistence.
-14. Conclusion and Monitoring: Conclude the project by summarizing key achievements and monitoring the EKS cluster’s performance using Grafana.
+This repository hosts the implementation of a Three-Tier Web App using ReactJS, NodeJS, and MongoDB, deployed on AWS EKS. The project covers a wide range of tools and practices for a robust and scalable DevOps setup.
 
-Process
+## Table of Contents
+- [Application Code](#application-code)
+- [Jenkins Pipeline Code](#jenkins-pipeline-code)
+- [Jenkins Server Terraform](#jenkins-server-terraform)
+- [Kubernetes Manifests Files](#kubernetes-manifests-files)
+- [Project Details](#project-details)
 
-1. IAM User setup
+## Application Code
+The `Application-Code` directory contains the source code for the Three-Tier Web Application. Dive into this directory to explore the frontend and backend implementations.
 
+## Jenkins Pipeline Code
+In the `Jenkins-Pipeline-Code` directory, you'll find Jenkins pipeline scripts. These scripts automate the CI/CD process, ensuring smooth integration and deployment of your application.
+
+## Jenkins Server Terraform
+Explore the `Jenkins-Server-TF` directory to find Terraform scripts for setting up the Jenkins Server on AWS. These scripts simplify the infrastructure provisioning process.
+
+## Kubernetes Manifests Files
+The `Kubernetes-Manifests-Files` directory holds Kubernetes manifests for deploying your application on AWS EKS. Understand and customize these files to suit your project needs.
+
+## Project Details
+🛠️ **Tools Explored:**
+- Terraform & AWS CLI for AWS infrastructure
+- Jenkins, Sonarqube, Terraform, Kubectl, and more for CI/CD setup
+- Helm, Prometheus, and Grafana for Monitoring
+- ArgoCD for GitOps practices
+
+🚢 **High-Level Overview:**
+- IAM User setup & Terraform magic on AWS
+- Jenkins deployment with AWS integration
+- EKS Cluster creation & Load Balancer configuration
+- Private ECR repositories for secure image management
+- Helm charts for efficient monitoring setup
+- GitOps with ArgoCD - the cherry on top!
+
+📈 **The journey covered everything from setting up tools to deploying a Three-Tier app, ensuring data persistence, and implementing CI/CD pipelines.**
+
+## Getting Started
+To get started with this project, refer to our [comprehensive guide](https://amanpathakdevops.medium.com/advanced-end-to-end-devsecops-kubernetes-three-tier-project-using-aws-eks-argocd-prometheus-fbbfdb956d1a) that walks you through IAM user setup, infrastructure provisioning, CI/CD pipeline configuration, EKS cluster creation, and more.
+
+## Contributing
+We welcome contributions! If you have ideas for enhancements or find any issues, please open a pull request or file an issue.
+
+## License
+This project is licensed under the [MIT License](LICENSE).
+
+Happy Coding! 🚀
