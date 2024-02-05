@@ -1,0 +1,13 @@
++ git config user.email gaftofi@gmail.com
++ git config user.name abdulxs
++ BUILD_NUMBER=33
++ echo 33
+33
++ grep backend: deployment.yaml
++ awk {print $2}
++ imageTag=913616586420.dkr.ecr.eu-north-1.amazonaws.com/backend:latest
++ echo 913616586420.dkr.ecr.eu-north-1.amazonaws.com/backend:latest
+913616586420.dkr.ecr.eu-north-1.amazonaws.com/backend:latest
++ sed -i s#backend:913616586420.dkr.ecr.eu-north-1.amazonaws.com/backend:latest#backend:33# deployment.yaml
++ git add deployment.yaml
++ git add ../../.
