@@ -1,0 +1,23 @@
++ git config user.email gaftofi@gmail.com
++ git config user.name abdulxs
++ BUILD_NUMBER=38
++ echo 38
+38
++ echo this is the repo name and image tag before ops: {AWS_ECR_REPO_NAME}
+this is the repo name and image tag before ops: {AWS_ECR_REPO_NAME}
++ + awk {print $2}
+grep backend: deployment.yaml
++ imageTag=913616586420.dkr.ecr.eu-north-1.amazonaws.com/backend:latest
++ echo this is the image tag before ops: 913616586420.dkr.ecr.eu-north-1.amazonaws.com/backend:latest
+this is the image tag before ops: 913616586420.dkr.ecr.eu-north-1.amazonaws.com/backend:latest
++ grep -oP (?<=backend:)[^ ]+ deployment.yaml
++ imageTag=latest
++ echo latest
+latest
++ sed -i s/backend:latest/backend:38/ deployment.yaml
++ echo this is the repo name and image tag after ops: {AWS_ECR_REPO_NAME} and latest
+this is the repo name and image tag after ops: {AWS_ECR_REPO_NAME} and latest
++ echo this is the buid number after ops: 38
+this is the buid number after ops: 38
++ git add ../../Kubernetes-Manifests-file/Backend/deployment.yaml
++ git add ../../.

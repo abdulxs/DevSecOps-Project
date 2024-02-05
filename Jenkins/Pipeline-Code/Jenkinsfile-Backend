@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Checkout from Git') {
             steps {
-                git credentialsId: 'GITHUB', url: 'https://github.com/Abdulxs/DevSecOps-Project.git'
+                git credentialsId: 'GITHUB', url: 'https://github.com/abdulxs/DevSecOps-Project.git'
             }
         }
         stage('Sonarqube Analysis') {
@@ -82,20 +82,20 @@ pipeline {
         }
         stage('Checkout Code') {
             steps {
-                git credentialsId: 'GITHUB', url: 'https://github.com/Abdulxs/DevSecOps-Project.git'
+                git credentialsId: 'GITHUB', url: 'https://github.com/abdulxs/DevSecOps-Project.git'
             }
         }
         stage('Update Deployment file') {
             environment {
                 GIT_REPO_NAME = "DevSecOps-Project"
-                GIT_USER_NAME = "Abdulxs"
+                GIT_USER_NAME = "abdulxs"
             }
             steps {
                 dir('Kubernetes-Manifests-file/Backend') {
                     withCredentials([string(credentialsId: 'github', variable: 'GITHUB_TOKEN')]) {
                         sh '''
                             git config user.email "gaftofi@gmail.com"
-                            git config user.name "Abdulxs"
+                            git config user.name "abdulxs"
                             BUILD_NUMBER=${BUILD_NUMBER}
                             echo $BUILD_NUMBER
                             imageTag=$(grep -oP '(?<=backend:)[^ ]+' deployment.yaml)
