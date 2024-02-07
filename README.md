@@ -29,4 +29,4 @@ The `Kubernetes-Manifests-Files` directory holds Kubernetes manifests for deploy
 - GitOps with ArgoCD
 
 **Getting Started:**
-To get started with this project, refer to [this post]()
+To get started with this project, refer to [this post](https://dev.to/abdulxs/devsecops-orchestrating-secure-and-observable-3-tier-deployments-on-aws-with-terraform-eks-jenkins-prometheus-etc-2b5e)
