@@ -10,7 +10,7 @@ metadata:
 spec:
   ingressClassName: alb
   rules:
-    - host: backend.abdulxs.study
+    - host: backend.lagbaja.tech
       http:
         paths:
           - path: /api
