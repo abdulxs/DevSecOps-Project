@@ -1,5 +1,4 @@
-DevsecOps project
-# Three-Tier Web Application Deployment on AWS EKS using AWS EKS, ArgoCD, Prometheus, Grafana, and Jenkins
+DevsecOps project: Deploying a Three-Tier web Application Infrastructure on AWS EKS using Terraform, AWS EKS, ArgoCD, Jenkins, Prometheus etc.
 
 This repository hosts the implementation of a Three-Tier Web App using ReactJS, NodeJS, and MongoDB, deployed on AWS EKS. The project covers a wide range of tools and practices for a robust and scalable DevOps setup.
 
@@ -31,4 +30,3 @@ Overview:
 
 Getting Started
 To get started with this project, refer to [this post]()
-
