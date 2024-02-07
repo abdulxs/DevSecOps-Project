@@ -2,16 +2,16 @@ DevsecOps project: Deploying a Three-Tier web Application Infrastructure on AWS 
 
 This repository hosts the implementation of a Three-Tier Web App using ReactJS, NodeJS, and MongoDB, deployed on AWS EKS. The project covers a wide range of tools and practices for a robust and scalable DevOps setup.
 
-Application Code
+Application Code:
 The `Application-Code` directory contains the source code for the Three-Tier Web Application.
 
-Jenkins Pipeline Code
+Jenkins Pipeline Code:
 In the `Jenkins-Pipeline-Code` directory, you'll find Jenkins pipeline scripts. These scripts automate the CI/CD process, ensuring smooth integration and deployment of the application.
 
-Jenkins Server Terraform
+Jenkins Server Terraform:
 The `Jenkins-Server-TF` directory contains Terraform scripts for setting up the Jenkins Server on AWS using Infrastructure as Code.
 
-Kubernetes Manifests Files
+Kubernetes Manifests Files:
 The `Kubernetes-Manifests-Files` directory holds Kubernetes manifests for deploying the application on AWS EKS.
 
 Tools Explored:
